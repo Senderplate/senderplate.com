@@ -1,0 +1,12 @@
+{
+  "sitename": "Senderplate - ",
+  "title": "Senderplate",
+  "url": "https://senderplate.com/",
+  "description": "Product site for Senderplate, responsive HTML email templates made for Apps & Developers.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jin Su Park",
+    "email": "jinsupark@icloud.com",
+    "url": "https://jinsupark.com/"
+  }
+}

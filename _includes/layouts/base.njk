@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased font-sans bg-background color-body">
+  <head>
+    <title>{{ title }}</title>
+
+    <!-- Page Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Styles -->
+    {# <link rel="stylesheet" href="{{ '/assets/css/uniform.min.css' | url }}" /> #}
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" />
+
+    <!-- Font Awesome 5 -->
+    {# <script
+      src="https://kit.fontawesome.com/9e90e993e3.js"
+      crossorigin="anonymous"
+    ></script> #}
+
+    <!-- AlpineJS -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"
+    ></script>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="CEQUPOGM" defer></script>
+  </head>
+  <body class="antialiased text-slate-600 font-normal bg-slate-900">
+
+    {{ content | safe }}
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

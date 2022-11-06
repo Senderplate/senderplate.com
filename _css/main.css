@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../libraries/fontawesome/css/fontawesome.min.css';
+/* @import '../libraries/fontawesome/css/light.min.css';
+@import '../libraries/fontawesome/css/regular.min.css'; */
+@import '../libraries/fontawesome/css/solid.min.css';
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("../fonts/inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("../fonts/inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+
+[x-cloak] { display: none !important; }

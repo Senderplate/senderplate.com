@@ -1,0 +1,96 @@
+@use 'uniform' as * with (
+  $config: (
+    font-families: (
+      sans: (
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif,
+      ),
+      mono: (
+        Menlo,
+        Consolas,
+        Monaco,
+        Liberation Mono,
+        Lucida Console,
+        monospace,
+      ),
+    ),
+    colors: (
+      background: #010314,
+      card-border: #35374C,
+      card: #212638,
+      primary: #FFB326,
+      primary-hover: #E5A122,
+      body: #CDD6E1,
+      barley-text: #FFFBD7
+    )
+  )
+);
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("../fonts/inter/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("../fonts/inter/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.preview-carousel {
+  @include apply('mx-auto flex align-items-center justify-content-center');
+  // & > * + * {
+  //   margin-left: -300px;
+  // }
+  &__item {
+    @include apply('relative flex-none w-320 lg.w-512 radius-lg shadow-xl');
+    &:nth-child(1) {
+      transform: scale(0.3) translateX(550%);
+      opacity: .5;
+    }
+    &:nth-child(7) {
+      transform: scale(0.3) translateX(-550%);
+      opacity: .5;
+    }
+
+    &:nth-child(2) {
+      transform: scale(0.5) translateX(200%);
+    }
+    &:nth-child(6) {
+      transform: scale(0.5) translateX(-200%);
+    }
+
+    &:nth-child(3) {
+      transform: scale(.70) translateX(60%);
+    }
+    &:nth-child(5) {
+      transform: scale(.70) translateX(-60%);
+    }
+    img {
+      @include apply('w-100p radius-md');
+    }
+  }
+}

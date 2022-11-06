@@ -1,0 +1,31 @@
+{
+  "name": "senderplate",
+  "version": "2.0.0",
+  "description": "Prototype for Castle Dashboard 2.0",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
+    "css": "npx tailwindcss -i ./_css/main.css -o ./assets/css/main.css --watch",
+    "uniform": "sass --load-path=./node_modules/uniformcss --no-source-map _sass/main.scss assets/css/uniform.css",
+    "uniform:compressed": "sass --load-path=./node_modules/uniformcss --no-source-map _sass/main.scss assets/css/uniform.min.css --style compressed",
+    "uniform:watch": "sass --load-path=./node_modules/uniformcss --no-source-map --watch _sass/main.scss assets/css/uniform.css",
+    "uniform:watch-compressed": "sass --load-path=./node_modules/uniformcss --no-source-map --watch _sass/main.scss assets/css/uniform.min.css --style compressed",
+    "uniform:purge": "purgecss -c purgecss.config.js -o assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/castle/dashboard-prototype.git"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+    "postcss-cli": "^9.1.0",
+    "prettier": "^2.5.1",
+    "purgecss": "^3.0.0",
+    "tailwindcss": "^3.2.1",
+    "uniformcss": "^1.5.4"
+  }
+}
