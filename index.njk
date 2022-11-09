@@ -3,74 +3,76 @@ title: Home
 layout: layouts/base.njk
 ---
 
-<nav class="fixed top-0 w-100p flex align-items-center justify-content-center mt-24 z-10">
-  <div class="border-1 border-card-border bg-card p-10 pr-24 radius-lg flex align-items-center">
-    <a class="flex align-items-center justify-content-center radius-sm h-36 px-12 text-sm semibold bg-primary hover.bg-primary-hover color-black">
-      <i class="fas fa-shopping-cart mr-12"></i> Buy now $39
+<nav class="fixed top-0 w-full flex items-center justify-center mt-6 z-[60]">
+  <div class="border border-[#35374C] bg-[#212638] p-2 pr-6 rounded-xl flex items-center">
+    <a class="flex items-center justify-center rounded-md h-9 px-3 text-sm font-semibold bg-[#FFB326] hover:bg-[#E5A122] text-black">
+      <i class="fas fa-shopping-cart mr-4"></i> Buy now $39
     </a>
-    <div class="mx-24 color-white color-opacity-40 semibold">
+    <div class="mx-6 text-white text-opacity-40 font-semibold">
       or
     </div>
-    <a class="text-sm semibold color-primary hover.color-primary-hover">
+    <a class="text-sm font-semibold text-[#FFB326] hover:text-[#E5A122]">
       Get Free Sample
     </a>
   </div>
 </nav>
 
 
-<section class="px-32 pt-144">
-  <div class="flex align-items-center justify-content-center mb-64">
-    <img src="/assets/img/senderplate-logo-white.svg" class="w-144">
-  </div>
+<section class="px-5 pt-36">
+  <div class="max-w-[1024px] mx-auto">
+    <div class="flex items-center sm:justify-center mb-10">
+      <img src="/assets/img/senderplate-logo-white.svg" class="w-[144px]">
+    </div>
 
-  <div class="color-white text-center text-sm semibold mb-10">
-    By the makers of Uniform CSS
-  </div>
+    <div class="text-white sm:text-center text-sm font-semibold mb-6">
+      By the makers of Uniform CSS
+    </div>
 
-  <h1 class="bold mx-auto text-center color-red-200 mb-32 text-4xl lg.text-10xl tracking-tight" style="max-width: 900px; line-height: 0.95;">
-    HTML email templates made for <span class="color-red-300">Apps &amp; Developers</span>
-  </h1>
+    <h1 class="font-bold mx-auto sm:text-center text-red-300 mb-8 text-4xl sm:text-6xl lg:text-10xl tracking-tight max-w-[800px]">
+      HTML email templates made for <span class="text-red-400">Apps &amp; Developers</span>
+    </h1>
 
-  <p class="text-center max-w-512 mx-auto text-md mb-40">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
+    <p class="sm:text-center sm:max-w-[512px] mx-auto text-md mb-10 text-slate-300">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
 
-  <div class="mb-96">
-    <ul class="flex align-items-center justify-content-center gap-40">
-      <li class="flex align-items-center color-white medium text-sm">
-        <i class="fas fa-check color-primary mr-12"></i>
-        Built with MJML
-      </li>
-      <li class="flex align-items-center color-white medium text-sm">
-        <i class="fas fa-check color-primary mr-12"></i>
-        Fully Responsive
-      </li>
-      <li class="flex align-items-center color-white medium text-sm">
-        <i class="fas fa-check color-primary mr-12"></i>
-        Outlook Compatible
-      </li>
-    </ul>
+    <div class="mb-20">
+      <ul class="flex flex-col sm:flex-row sm:items-center justify-center gap-4 sm:gap-10">
+        <li class="flex items-center text-white medium text-sm">
+          <i class="fas fa-check text-[#FFB326] mr-4"></i>
+          Built with MJML
+        </li>
+        <li class="flex items-center text-white medium text-sm">
+          <i class="fas fa-check text-[#FFB326] mr-4"></i>
+          Fully Responsive
+        </li>
+        <li class="flex items-center text-white medium text-sm">
+          <i class="fas fa-check text-[#FFB326] mr-4"></i>
+          Outlook Compatible
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="relative overflow-x-hidden overflow-y-visible">
     <div class="preview-carousel">
-      <div class="preview-carousel__item z-1">
+      <div class="preview-carousel__item z-10">
         <img src="https://via.placeholder.com/500x800">
       </div>
-      <div class="preview-carousel__item z-2">
+      <div class="preview-carousel__item z-20">
         <img src="https://via.placeholder.com/500x800">
       </div>
-      <div class="preview-carousel__item z-3">
+      <div class="preview-carousel__item z-30">
         <img src="https://via.placeholder.com/500x800">
       </div>
-      <div class="preview-carousel__item z-4">
+      <div class="preview-carousel__item z-40">
         <img src="/assets/img/hero/twitch.png">
       </div>
-      <div class="preview-carousel__item z-3">
+      <div class="preview-carousel__item z-30">
         <img src="/assets/img/hero/subscribe.png">
       </div>
-      <div class="preview-carousel__item z-2">
+      <div class="preview-carousel__item z-20">
         <img src="https://via.placeholder.com/500x800">
       </div>
-      <div class="preview-carousel__item z-1">
+      <div class="preview-carousel__item z-10">
         <img src="https://via.placeholder.com/500x800">
       </div>
     </div>
@@ -79,25 +81,25 @@ layout: layouts/base.njk
 
 
 
-<section class="px-32 pt-144">
-  <div class="max-w-1024 mx-auto grid grid-cols-1 gap-72">
-    <div class="grid grid-cols-2 gap-72">
-      <div class="flex align-items-center">
+<section class="max-w-[1024px] px-5 mx-auto pt-[144px]">
+  <div class="grid grid-cols-1 gap-[72px]">
+    <div class="grid sm:grid-cols-2 gap-[72px]">
+      <div class="flex items-center">
         
         <div>
-          <div class="flex align-items-center font-sm semibold color-white mb-24">
-            <i class="fas fa-code color-indigo-300 mr-12"></i>
+          <div class="flex items-center font-sm font-semibold text-white mb-6">
+            <i class="fas fa-code text-indigo-300 mr-4"></i>
             Built with MJML
           </div>
-          <h2 class="mb-24 font-4xl semibold color-barley-text">
+          <h2 class="mb-6 text-2xl sm:text-3xl font-semibold text-[#FFFBD7]">
             Built with the world's most powerful responsive email framework
           </h2>
-          <p class="mb-32 text-md color-body">
+          <p class="mb-8 text-md text-slate-300">
             Coding responsive and email client compliant code from scratch can be tedious and time-consuming. Save time, and write less code with MJML’s simple syntax to quickly build highly flexible component based emails. 
           </p>
-          <a class="inline-flex align-items-center color-primary semibold">
+          <a class="inline-flex items-center text-[#FFB326] font-semibold">
             Learn about MJML
-            <i class="fas fa-arrow-right ml-12"></i>
+            <i class="fas fa-arrow-right ml-3"></i>
           </a>
         </div>
 
@@ -107,25 +109,25 @@ layout: layouts/base.njk
       </div>
     </div>
 
-    <div class="h-1 w-100p bg-white bg-opacity-20"></div>
+    <div class="h-1 w-full bg-white bg-opacity-20"></div>
 
-    <div class="grid grid-cols-2 gap-72">
-      <div class="flex align-items-center">
+    <div class="grid sm:grid-cols-2 gap-[72px]">
+      <div class="flex items-center">
         
         <div>
-          <div class="flex align-items-center font-sm semibold color-white mb-24">
-            <i class="fas fa-code color-indigo-300 mr-12"></i>
+          <div class="flex items-center font-sm font-semibold text-white mb-6">
+            <i class="fas fa-code text-indigo-300 mr-4"></i>
             Built with MJML
           </div>
-          <h2 class="mb-24 font-4xl semibold color-barley-text">
+          <h2 class="mb-6 text-2xl sm:text-3xl font-semibold text-[#FFFBD7]">
             Built with the world's most powerful responsive email framework
           </h2>
-          <p class="mb-32 text-md color-body">
+          <p class="mb-8 text-md text-slate-300">
             Coding responsive and email client compliant code from scratch can be tedious and time-consuming. Save time, and write less code with MJML’s simple syntax to quickly build highly flexible component based emails. 
           </p>
-          <a class="inline-flex align-items-center color-primary semibold">
+          <a class="inline-flex items-center text-[#FFB326] font-semibold">
             Learn about MJML
-            <i class="fas fa-arrow-right ml-12"></i>
+            <i class="fas fa-arrow-right ml-3"></i>
           </a>
         </div>
 
@@ -139,31 +141,31 @@ layout: layouts/base.njk
 
 
 
-<section class="px-32 pt-144">
-  <div class="max-w-1024 mx-auto mb-96">
-    <div class="flex align-items-center justify-content-center font-md semibold color-white mb-24">
-      <i class="fas fa-random color-lime-300 mr-12"></i>
+<section class="px-5 mx-auto pt-[144px]">
+  <div class="max-w-[1024px] mx-auto mb-24">
+    <div class="flex items-center sm:justify-center font-md font-semibold text-white mb-6">
+      <i class="fas fa-random text-lime-300 mr-4"></i>
       Adaptable Components
     </div>
 
-    <h1 class="bold mx-auto text-center color-lime-100 mb-32 text-3xl lg.text-10xl tracking-tight" style="max-width: 900px; line-height: 0.95;">
-      Made to handle all email <span class="color-lime-300">blast situations</span>
+    <h1 class="font-bold mx-auto sm:text-center text-lime-100 mb-8 text-4xl sm:text-5xl xl:text-6xl tracking-tight">
+      Made to handle all email <br><span class="text-lime-300">blast situations</span>
     </h1>
 
-    <p class="text-center max-w-512 mx-auto text-md mb-40">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
+    <p class="sm:text-center sm:max-w-[512px] mx-auto text-md mb-10 text-slate-300">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
 
-    <div class="flex align-items-center justify-content-center gap-20">
-      <a class="flex align-items-center justify-content-center radius-sm h-36 px-12 text-sm semibold bg-primary hover.bg-primary-hover color-black">
-        <i class="fas fa-shopping-cart mr-12" aria-hidden="true"></i> Buy now $39
+    <div class="flex items-center sm:justify-center gap-4">
+      <a class="flex items-center justify-center rounded-md h-9 px-3 text-sm font-semibold bg-[#FFB326] hover:bg-[#E5A122] text-black">
+        <i class="fas fa-shopping-cart mr-4" aria-hidden="true"></i> Buy now $39
       </a>
-      <div class="relative flex align-items-center justify-content-start radius-sm h-36 px-12 text-sm semibold font-mono bg-white bg-opacity-10 border-1 border-cool-gray-600 color-cool-gray-300 w-256">
+      <div class="relative flex items-center justify-content-start rounded-md h-9 px-3 text-sm font-semibold font-mono bg-white bg-opacity-10 border border-slate-600 text-cool-gray-300 w-[256px]">
         npm i uniformcss
       </div>
     </div>
   </div>
 
   <div class="mx-auto" style="max-width: 1920px;">
-    <div class="grid grid-cols-6 gap-48">
+    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6">
       <div>
         <img src="https://via.placeholder.com/300x600">
       </div>
@@ -194,64 +196,61 @@ layout: layouts/base.njk
 </section>
 
 
-<section class="px-32 pt-144">
-  <div class="max-w-1024 mx-auto grid grid-cols-1 gap-72">
-    <div class="grid grid-cols-1 sm.grid-cols-3 gap-72">
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-pink-200">
-          21 Custom <br>made <br>templates
-        </h3>
-        <p class="mb-32 text-md color-body">
-          Choose from 21 hand-crafted email templates based on modern marketing and product email design patterns.
-        </p>
-      </div>
-      
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-red-200">
-          Modular <br>component <br>based system
-        </h3>
-        <p class="mb-32 text-md color-body">
-          Pick your sleeve, then import various content blocks from build out the template according to your needs.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-indigo-200">
-          Built-in <br>Figma design <br>templates
-        </h3>
-        <p class="mb-32 text-md color-body">
-          Gain access to the free Figma design template, each with overridable styles and components.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-lime-200">
-          Support for <br>wide range of <br>use cases
-        </h3>
-        <p class="mb-32 text-md color-body">
-          Whether its a marketing newsletter, or a product email. Choose from a diverse range of templates to fit your use case.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-cyan-200">
-          Tested on all <br>modern email <br>clients
-        </h3>
-        <p class="mb-32 text-md color-body">
-          All our email templates are tested on all modern email clients across both mobile and desktop.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="mb-24 font-6xl semibold color-orange-200">
-          Mobile-first <br>design <br>templates
-        </h3>
-        <p class="mb-32 text-md color-body">
-          Every template is designed with mobile devices in mind and is all responsive straight out-of-the-box.
-        </p>
-      </div>
+<section class="max-w-[1024px] px-5 mx-auto pt-[144px]">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-16">
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-pink-200">
+        21 Custom <br>made <br>templates
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        Choose from 21 hand-crafted email templates based on modern marketing and product email design patterns.
+      </p>
+    </div>
+    
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-red-200">
+        Modular <br>component <br>based system
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        Pick your sleeve, then import various content blocks from build out the template according to your needs.
+      </p>
     </div>
 
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-indigo-200">
+        Built-in <br>Figma design <br>templates
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        Gain access to the free Figma design template, each with overridable styles and components.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-lime-200">
+        Support for <br>wide range of <br>use cases
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        Whether its a marketing newsletter, or a product email. Choose from a diverse range of templates to fit your use case.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-cyan-200">
+        Tested on all <br>modern email <br>clients
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        All our email templates are tested on all modern email clients across both mobile and desktop.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="mb-6 text-3xl font-semibold text-orange-200">
+        Mobile-first <br>design <br>templates
+      </h3>
+      <p class="mb-8 text-md text-slate-300">
+        Every template is designed with mobile devices in mind and is all responsive straight out-of-the-box.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -259,38 +258,228 @@ layout: layouts/base.njk
 
 
 
-<section class="px-32 pt-144">
-  <div class="max-w-1024 mx-auto mb-96">
-    <div class="flex align-items-center justify-content-center font-md semibold color-white mb-24">
-      <i class="fas fa-rocket color-indigo-300 mr-12"></i>
+<section class="px-5 mx-auto pt-[144px]">
+  <div class="max-w-[1024px] mx-auto">
+    <div class="flex items-center sm:justify-center font-md font-semibold text-white mb-6">
+      <i class="fas fa-rocket text-indigo-300 mr-4"></i>
       Getting Started
     </div>
 
-    <h1 class="bold mx-auto text-center color-indigo-200 mb-32 text-3xl lg.text-10xl tracking-tight" style="max-width: 600px; line-height: 0.95;">
-      Simple package to <span class="color-indigo-300">get you started</span>
+    <h1 class="font-bold mx-auto sm:text-center text-indigo-300 mb-8 text-4xl sm:text-5xl xl:text-6xl tracking-tight">
+      Simple package to <br><span class="text-indigo-500">get you started</span>
     </h1>
 
-    <p class="text-center max-w-512 mx-auto text-md mb-40">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
+    <p class="sm:text-center max-w-[512px] mx-auto text-md mb-10 text-slate-300">Everything you need to build beautifully crafted responsive HTML emails for your next start-up project, built with MJML support.</p>
 
-    <div class="flex align-items-center justify-content-center gap-20 mb-64">
-      <a class="flex align-items-center justify-content-center radius-sm h-36 px-12 text-sm semibold bg-primary hover.bg-primary-hover color-black">
-        <i class="fas fa-shopping-cart mr-12" aria-hidden="true"></i> Buy now $39
+    <div class="flex items-center sm:justify-center gap-4 mb-16">
+      <a class="flex items-center justify-center rounded-md h-9 px-3 text-sm font-semibold bg-[#FFB326] hover:bg-[#E5A122] text-black">
+        <i class="fas fa-shopping-cart mr-4" aria-hidden="true"></i> Buy now $39
       </a>
-      <div class="relative flex align-items-center justify-content-start radius-sm h-36 px-12 text-sm semibold font-mono bg-white bg-opacity-10 border-1 border-cool-gray-600 color-cool-gray-300 w-256">
+      <div class="relative flex items-center justify-content-start rounded-md h-9 px-3 text-sm font-semibold font-mono bg-white bg-opacity-10 border border-slate-600 text-cool-gray-300 w-[256px]">
         npm i uniformcss
       </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-24 mb-24">
-      <div class="col-1 h-512 radius-xl bg-blue-500 text-white">
-        gege
+    <div class="grid grid-cols-3 gap-6 mb-6">
+      <div class="col-span-3 sm:col-span-1 p-8 rounded-xl bg-[#FFA7A7] text-white">
+        <div class="text-black font-bold mb-3">
+          Starter Pack
+        </div>
+        <div class="text-black text-4xl mb-3 font-[800]">
+          Free
+        </div>
+        <p class="text-base text-black mb-6">
+          Just the bare essentials
+        </p>
+        <div class="h-0.5 bg-black mb-8">
+
+        </div>
+        <ul class="grid grid-cols-1 gap-2 mb-10">
+          <li class="flex items-center h-6 text-black">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> 5 Free static templates
+          </li>
+          <li class="flex items-center h-6 text-black">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> Community access
+          </li>
+          <li class="flex items-center h-6 text-black">
+            
+          </li>
+          <li class="flex items-center h-6 text-black">
+            
+          </li>
+          <li class="flex items-center h-6 text-black">
+            
+          </li>
+          <li class="flex items-center h-6 text-black">
+            
+          </li>
+
+        </ul>
+        <a class="flex items-center justify-center rounded-md h-10 px-3 text-sm font-semibold bg-black text-white">
+          <i class="fas fa-arrow-down mr-4" aria-hidden="true"></i> Download Pack
+        </a>
       </div>
-      <div class="col-2 h-512 radius-xl bg-blue-500 text-white">
-        gege
+      <div class="col-span-3 sm:col-span-2 p-8 rounded-xl bg-indigo-600 text-white">
+        <div class="text-white font-bold mb-3">
+          Solo
+        </div>
+        <div class="text-white text-4xl mb-3 font-[800]">
+          $49
+        </div>
+        <p class="text-base text-white mb-6">
+          Complete package with all designs and templates
+        </p>
+        <div class="h-0.5 bg-white mb-8 w-[256px]">
+
+        </div>
+        <ul class="grid grid-cols-1 gap-2 mb-10">
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> 5 Free static templates
+          </li>
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> Community access
+          </li>
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> 5 Free static templates
+          </li>
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> Community access
+          </li>
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> 5 Free static templates
+          </li>
+          <li class="flex items-center h-6 text-white">
+            <i class="fas fa-check-circle mr-3" aria-hidden="true"></i> Community access
+          </li>
+        </ul>
+        <a class="inline-flex items-center justify-center rounded-md h-10 px-3 w-64 text-sm font-semibold bg-white text-black">
+          <i class="fas fa-shopping-cart mr-4" aria-hidden="true"></i> Buy now
+        </a>
       </div>
     </div>
-    <div class="h-320 radius-xl bg-blue-500 text-white">
-      gege
+    <div class="p-10 rounded-xl bg-slate-800 text-white">
+      <div class="text-[#FFB326] font-bold mb-3">
+        Custom
+      </div>
+      <div class="text-white text-3xl tracking-tight mb-4 font-[800]">
+        Need a custom design?
+      </div>
+      <p class="text-base text-slate-300 mb-8 max-w-[380px]">
+        Can't find what you're looking for? Work with our professional team to design and develop any custom email template to fit your use case.
+      </p>
+      <a class="inline-flex items-center justify-center rounded-md h-10 px-5 text-sm font-semibold bg-[#FFB326] hover:bg-[#E5A122] text-black">
+        Tell us what you need <i class="fas fa-comment ml-4" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+<section class="px-5 mx-auto pt-[144px]">
+  <div class="max-w-[1024px] mx-auto mb-96">
+    <h1 class="font-bold mx-auto text-center text-white mb-16 text-3xl lg:text-6xl tracking-tight max-w-[600px]">
+      Frequently asked questions
+    </h1>
+
+    <div class="flex justify-content-center">
+      <ul class="max-w-2xl w-100p flex-1 mx-auto grid grid-cols-1 gap-6">
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-[#FFB326]" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              How many Figma design templates are included in the starter pack?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                You can pay for GitHub Pro, Team and Enterprise with a credit card, debit card or with a PayPal account. We also support invoice payments for the Enterprise plan.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-[#FFB326]" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              What is a sleeve and an insert?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                You can pay for GitHub Pro, Team and Enterprise with a credit card, debit card or with a PayPal account. We also support invoice payments for the Enterprise plan.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-[#FFB326]" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              What is MJML?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                You can pay for GitHub Pro, Team and Enterprise with a credit card, debit card or with a PayPal account. We also support invoice payments for the Enterprise plan.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-[#FFB326]" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              Do you provide refunds?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                You can pay for GitHub Pro, Team and Enterprise with a credit card, debit card or with a PayPal account. We also support invoice payments for the Enterprise plan.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-[#FFB326]" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              I have a custom design that isn’t yet supported, do you provide any custom service?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                You can pay for GitHub Pro, Team and Enterprise with a credit card, debit card or with a PayPal account. We also support invoice payments for the Enterprise plan.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        
+      </ul>
     </div>
   </div>
 

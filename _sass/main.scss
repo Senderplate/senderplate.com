@@ -61,7 +61,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .preview-carousel {
-  @include apply('mx-auto flex align-items-center justify-content-center');
+  @include apply('mx-auto flex align-items-center justify-content-center z-10');
   // & > * + * {
   //   margin-left: -300px;
   // }

@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*! purgecss start ignore */
 @import '../libraries/fontawesome/css/fontawesome.min.css';
 /* @import '../libraries/fontawesome/css/light.min.css';
 @import '../libraries/fontawesome/css/regular.min.css'; */
 @import '../libraries/fontawesome/css/solid.min.css';
+/*! purgecss end ignore */
 
 @font-face {
   font-family: 'Inter var';
@@ -26,3 +28,36 @@
 }
 
 [x-cloak] { display: none !important; }
+
+.preview-carousel {
+    @apply mx-auto flex items-center justify-center;
+}
+
+.preview-carousel__item {
+    @apply relative flex-none w-[320px] lg:w-[512px] shadow-xl;
+}
+.preview-carousel__item:nth-child(1) {
+    transform: scale(0.3) translateX(550%);
+    opacity: .5;
+}
+.preview-carousel__item:nth-child(7) {
+    transform: scale(0.3) translateX(-550%);
+    opacity: .5;
+}
+
+.preview-carousel__item:nth-child(2) {
+    transform: scale(0.5) translateX(200%);
+}
+.preview-carousel__item:nth-child(6) {
+    transform: scale(0.5) translateX(-200%);
+}
+
+.preview-carousel__item:nth-child(3) {
+    transform: scale(.70) translateX(60%);
+}
+.preview-carousel__item:nth-child(5) {
+    transform: scale(.70) translateX(-60%);
+}
+.preview-carousel__item img {
+    @apply w-full rounded-xl;
+}

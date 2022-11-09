@@ -17,6 +17,6 @@ document.addEventListener('alpine:init', () => {
 
       iframe.src = 'https://www.youtube.com/embed/Zz6eOVaaelI?autoplay=1';
     },
-  })),
+  }))
 
 });
