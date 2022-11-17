@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="antialiased font-sans bg-background color-body">
+<html lang="en">
   <head>
     <title>{{ title }}</title>
 
@@ -32,12 +32,17 @@
       src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"
     ></script>
 
+    <!-- GSAP -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="CEQUPOGM" defer></script>
   </head>
-  <body class="antialiased text-slate-600 font-normal bg-[#010314]">
+  <body class="antialiased text-slate-600 font-normal font-sans bg-[#010314]">
 
     {{ content | safe }}
+    
 
     <!-- Scripts -->
     <script src="/assets/js/main.js"></script>

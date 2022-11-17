@@ -36,28 +36,138 @@
 .preview-carousel__item {
     @apply relative flex-none w-[320px] lg:w-[512px] shadow-xl;
 }
-.preview-carousel__item:nth-child(1) {
-    transform: scale(0.3) translateX(550%);
-    opacity: .5;
-}
-.preview-carousel__item:nth-child(7) {
-    transform: scale(0.3) translateX(-550%);
-    opacity: .5;
-}
 
-.preview-carousel__item:nth-child(2) {
+
+.preview-carousel__item:nth-child(1) {
     transform: scale(0.5) translateX(200%);
 }
-.preview-carousel__item:nth-child(6) {
+.preview-carousel__item:nth-child(5) {
     transform: scale(0.5) translateX(-200%);
 }
 
-.preview-carousel__item:nth-child(3) {
+.preview-carousel__item:nth-child(2) {
     transform: scale(.70) translateX(60%);
 }
-.preview-carousel__item:nth-child(5) {
+.preview-carousel__item:nth-child(4) {
     transform: scale(.70) translateX(-60%);
 }
 .preview-carousel__item img {
     @apply w-full rounded-xl;
 }
+
+/*! purgecss start ignore */
+
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
+/**
+ * prism:js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+ code[class*="language-"],
+ pre[class*="language-"] {
+	 @apply text-slate-200;
+	 background: none;
+	 font-family: font(mono);
+	 font-size: font(sm);
+	 text-align: left;
+	 white-space: pre;
+	 word-spacing: normal;
+	 word-break: normal;
+	 word-wrap: normal;
+	 line-height: 1.5;
+ 
+	 -moz-tab-size: 4;
+	 -o-tab-size: 4;
+	 tab-size: 4;
+ 
+	 -webkit-hyphens: none;
+	 -moz-hyphens: none;
+	 -ms-hyphens: none;
+	 hyphens: none;
+ 
+ }
+ 
+ /* Code blocks */
+ pre[class*="language-"] {
+	 padding: 20px;
+     margin: 0;
+	 /* overflow: auto; */
+ }
+ 
+ :not(pre) > code[class*="language-"],
+ pre[class*="language-"] {
+	 @apply text-slate-900;
+ }
+ 
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+	 padding: .1em;
+	 border-radius: .3em;
+	 white-space: normal;
+ }
+ 
+
+
+
+ 
+
+
+.token.comment {
+	@apply text-slate-400;
+}
+
+.token.selector {
+	@apply text-cyan-400;
+}
+
+.token.important {
+	color: #f14d31;
+}
+
+.token.tag {
+	@apply text-teal-400;
+}
+  
+.token.punctuation {
+	@apply text-slate-400;
+}
+
+.token.attr-name {
+	@apply text-green-500;
+}
+
+.token.attr-value {
+	@apply text-yellow-400;
+}
+
+.token.string {
+	@apply text-pink-400;
+}
+
+.token.variable {
+	color: rgb(var(--teal-500));
+}
+
+.token.keyword {
+	@apply text-indigo-300;
+}
+
+.token.rule {
+	@apply text-red-200;
+}
+
+.token.property {
+	@apply text-yellow-400;
+}
+
+.token.function {
+  @apply text-orange-300;
+}
+
+.token.operator {
+	@apply text-slate-300;
+}
+
+/*! purgecss end ignore */
