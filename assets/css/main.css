@@ -3183,6 +3183,10 @@ pre[class*="language-"] {
     grid-column: span 2 / span 2;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:max-w-\[512px\] {
     max-width: 512px;
   }
@@ -3236,8 +3240,16 @@ pre[class*="language-"] {
 }
 
 @media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 }
 
@@ -3261,6 +3273,10 @@ pre[class*="language-"] {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
