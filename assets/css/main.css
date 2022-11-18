@@ -901,6 +901,22 @@ video {
   margin-left: 5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2622,6 +2638,14 @@ video {
   line-height: 2rem;
 }
 
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
+
+.leading-\[1\] {
+  line-height: 1;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -3476,6 +3500,14 @@ pre[class*="language-"] {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
