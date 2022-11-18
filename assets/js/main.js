@@ -1,24 +1,13 @@
+
 // Initialize AlpineJS
 document.addEventListener('alpine:init', () => {
   // Main
   Alpine.data('main', () => ({
-    sidebar: true,
-    slidePanel: false,
-    userSlidePanel: false,
-
-    init: function () {},
-    showModal() {
-      this.modal = !this.modal;
-
-      var iframe = document.querySelector('.js-embedFrame') !== null;
-      if (iframe) {
-        var iframe = document.querySelector('.js-embedFrame');
-      }
-
-      iframe.src = 'https://www.youtube.com/embed/Zz6eOVaaelI?autoplay=1';
+    dialogs: {
+      preview: false,
     },
-  }))
-
+    previewSelection: 6
+  }));
 });
 
 
@@ -42,7 +31,6 @@ document.addEventListener(
     //   '-=1'
     // );
 
-
     // tl.from(
     //   '.gsap-carousel-item-1',
     //   { y: 200, opacity: 0, duration: .4 },
@@ -64,43 +52,38 @@ document.addEventListener(
     gsap.from('.gsap-carousel-item-3', {
       y: 600,
       duration: 2,
-      ease: "expo.out",
+      ease: 'expo.out',
     });
-
 
     gsap.from('.gsap-carousel-item-2', {
       x: 500,
       duration: 2,
       opacity: 0,
-      ease: "expo.out",
-      delay: 1
+      ease: 'expo.out',
+      delay: 1,
     });
     gsap.from('.gsap-carousel-item-4', {
       x: -500,
       duration: 2,
       opacity: 0,
-      ease: "expo.out",
+      ease: 'expo.out',
       delay: 1,
     });
-
 
     gsap.from('.gsap-carousel-item-1', {
       x: 1000,
       duration: 2,
       opacity: 0,
-      ease: "expo.out",
+      ease: 'expo.out',
       delay: 1.2,
     });
     gsap.from('.gsap-carousel-item-5', {
       x: -1000,
       duration: 2,
       opacity: 0,
-      ease: "expo.out",
+      ease: 'expo.out',
       delay: 1.2,
     });
-
-    
-
   },
   false
 );

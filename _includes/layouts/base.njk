@@ -27,6 +27,10 @@
     ></script>
 
     <!-- AlpineJS -->
+    {# <script
+      defer
+      src="https://unpkg.com/@alpinejs/persist@3.2.2/dist/cdn.min.js"
+    ></script> #}
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"
@@ -39,8 +43,8 @@
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="CEQUPOGM" defer></script>
   </head>
-  <body class="antialiased text-slate-600 font-normal font-sans bg-[#010314]">
-
+  <body class="antialiased text-slate-600 font-normal font-sans bg-[#010314]" x-data="main">
+    {% include "modals/preview.njk" %}
     {{ content | safe }}
     
 
