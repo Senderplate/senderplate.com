@@ -2219,6 +2219,14 @@ pre[class*="language-"] {
     max-width: 1920px;
   }
 
+  .\32xl\:max-w-\[900px\] {
+    max-width: 900px;
+  }
+
+  .\32xl\:max-w-\[800px\] {
+    max-width: 800px;
+  }
+
   .\32xl\:pt-32 {
     padding-top: 8rem;
   }
@@ -2229,5 +2237,15 @@ pre[class*="language-"] {
 
   .\32xl\:pt-\[144px\] {
     padding-top: 144px;
+  }
+
+  .\32xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
