@@ -84,6 +84,19 @@ document.addEventListener(
       ease: 'expo.out',
       delay: 1.2,
     });
+
+
+    gsap.from('.gsap-preview-item', {
+      scrollTrigger: {
+        trigger: '.gsap-preview',
+        // scrub: true,
+        // end: '40',
+      },
+      y: 100,
+      stagger: 0.05,
+      opacity: 0,
+      duration: 1,
+    });
   },
   false
 );
