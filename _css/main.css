@@ -30,29 +30,33 @@
 [x-cloak] { display: none !important; }
 
 .preview-carousel {
-    @apply mx-auto flex items-center justify-center;
+    @apply mx-auto flex items-center justify-center -space-x-[100px] sm:-space-x-[140px] xl:-space-x-[150px] 2xl:-space-x-[150px];
 }
 
 .preview-carousel__item {
-    @apply relative flex-none w-[320px] lg:w-[512px] shadow-xl;
+    @apply relative flex-none shadow-xl;
 }
 
 
 .preview-carousel__item:nth-child(1) {
-    transform: scale(0.5) translateX(200%);
+  @apply w-[150px] sm:w-[240px] xl:w-[240px] 2xl:w-[340px]
 }
 .preview-carousel__item:nth-child(5) {
-    transform: scale(0.5) translateX(-200%);
+  @apply w-[150px] sm:w-[240px] xl:w-[240px] 2xl:w-[340px]
+}
+
+.preview-carousel__item:nth-child(3) {
+  @apply w-[250px] sm:w-[400px] xl:w-[500px] 2xl:w-[600px]
 }
 
 .preview-carousel__item:nth-child(2) {
-    transform: scale(.70) translateX(60%);
+  @apply w-[200px] sm:w-[320px] xl:w-[380px] 2xl:w-[480px]
 }
 .preview-carousel__item:nth-child(4) {
-    transform: scale(.70) translateX(-60%);
+  @apply w-[200px] sm:w-[320px] xl:w-[380px] 2xl:w-[480px]
 }
 .preview-carousel__item img {
-    @apply w-full rounded-xl;
+    @apply w-full rounded sm:rounded-md xl:rounded-xl;
 }
 
 /*! purgecss start ignore */
