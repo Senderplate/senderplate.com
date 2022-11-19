@@ -565,6 +565,10 @@ video {
   padding-left: 1rem;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .visible {
   visibility: visible;
 }
@@ -1411,6 +1415,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.will-change-transform {
+  will-change: transform;
 }
 
 /*! purgecss start ignore */

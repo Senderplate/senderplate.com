@@ -50,20 +50,20 @@ document.addEventListener(
     });
 
     gsap.from('.gsap-carousel-item-3', {
-      y: 600,
+      y: 300,
       duration: 2,
       ease: 'expo.out',
     });
 
     gsap.from('.gsap-carousel-item-2', {
-      x: 500,
+      x: 100,
       duration: 2,
       opacity: 0,
       ease: 'expo.out',
       delay: 1,
     });
     gsap.from('.gsap-carousel-item-4', {
-      x: -500,
+      x: -200,
       duration: 2,
       opacity: 0,
       ease: 'expo.out',
@@ -71,14 +71,14 @@ document.addEventListener(
     });
 
     gsap.from('.gsap-carousel-item-1', {
-      x: 1000,
+      x: 100,
       duration: 2,
       opacity: 0,
       ease: 'expo.out',
       delay: 1.2,
     });
     gsap.from('.gsap-carousel-item-5', {
-      x: -1000,
+      x: -100,
       duration: 2,
       opacity: 0,
       ease: 'expo.out',
