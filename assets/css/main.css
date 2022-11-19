@@ -832,6 +832,22 @@ video {
   max-width: 42rem;
 }
 
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[440px\] {
+  max-width: 440px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1715,6 +1731,10 @@ pre[class*="language-"] {
 
   .sm\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:max-w-\[500px\] {
