@@ -1,5 +1,9 @@
 module.exports = {
-  content: ['./**/*.{njk,js}'],
+  content: [
+    './_includes/**/*.{njk,js}',
+    './assets/**/*.{njk,js}',
+    './*.{njk,js}',
+  ],
   theme: {
     container: {
       center: true,
@@ -51,9 +55,7 @@ module.exports = {
       },
     },
   },
-  safelist: [
-    '@import',
-  ],
+  safelist: ['@import'],
   plugins: [
     // require('@tailwindcss/typography'),
     // require('@tailwindcss/forms'),

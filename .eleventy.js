@@ -2,6 +2,8 @@ module.exports = function (eleventyConfig) {
   let pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
   let fs = require('fs');
 
+  eleventyConfig.setWatchThrottleWaitTime(400); // in milliseconds
+
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   eleventyConfig.setBrowserSyncConfig({
@@ -27,4 +29,4 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('*.svg');
   eleventyConfig.addPassthroughCopy('*.webmanifest');
   eleventyConfig.addPassthroughCopy('assets/');
-};
+};;
