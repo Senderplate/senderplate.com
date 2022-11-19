@@ -636,6 +636,11 @@ video {
   margin-right: 1rem;
 }
 
+.my-\[112px\] {
+  margin-top: 112px;
+  margin-bottom: 112px;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -887,6 +892,10 @@ video {
 
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1187,6 +1196,18 @@ video {
   line-height: 1.5rem;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
 .font-normal {
   font-weight: 450;
 }
@@ -1201,6 +1222,14 @@ video {
 
 .font-\[800\] {
   font-weight: 800;
+}
+
+.leading-\[1\.1\] {
+  line-height: 1.1;
+}
+
+.leading-\[1\.2\] {
+  line-height: 1.2;
 }
 
 .tracking-tight {
@@ -1757,6 +1786,10 @@ pre[class*="language-"] {
     align-items: center;
   }
 
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
   .sm\:justify-center {
     justify-content: center;
   }
@@ -1773,8 +1806,16 @@ pre[class*="language-"] {
     padding-top: 4rem;
   }
 
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 
   .sm\:text-4xl {
@@ -1791,6 +1832,22 @@ pre[class*="language-"] {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .sm\:leading-\[1\.25\] {
+    line-height: 1.25;
+  }
+
+  .sm\:leading-\[1\.4\] {
+    line-height: 1.4;
+  }
+
+  .sm\:leading-\[1\.5\] {
+    line-height: 1.5;
+  }
+
+  .sm\:leading-\[2\] {
+    line-height: 2;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1804,6 +1861,10 @@ pre[class*="language-"] {
 
   .md\:max-w-\[800px\] {
     max-width: 800px;
+  }
+
+  .md\:max-w-\[700px\] {
+    max-width: 700px;
   }
 
   .md\:grid-cols-3 {
@@ -1834,6 +1895,14 @@ pre[class*="language-"] {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .lg\:leading-\[2\] {
+    line-height: 2;
+  }
+
+  .lg\:leading-\[1\.2\] {
+    line-height: 1.2;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1853,5 +1922,9 @@ pre[class*="language-"] {
 
   .xl\:leading-8 {
     line-height: 2rem;
+  }
+
+  .xl\:leading-\[2\] {
+    line-height: 2;
   }
 }
