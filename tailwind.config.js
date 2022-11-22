@@ -30,8 +30,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', 'sans-serif'],
-        serif: ['Recoleta', 'serif'],
-        'serif-alt': ['Recoleta Alt', 'serif'],
+        // serif: ['Recoleta', 'serif'],
+        // 'serif-alt': ['Recoleta Alt', 'serif'],
       },
       fontWeight: {
         normal: 450,

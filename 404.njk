@@ -4,6 +4,27 @@ layout: layouts/base.njk
 permalink: 404.html
 ---
 
-<main class="p-20">
-  <h1 class="font-6xl extrabold tracking-tight">404 Oops</h1>
-</main>
+<div class="container mx-auto">
+  <div class="flex items-center justify-center py-[192px]">
+    <div class="text-center">
+      <div class="flex items-center justify-center mb-12">
+        <img src="/assets/img/senderplate-logo-white.svg" class="w-[128px]">
+      </div>
+      
+      <div class="flex justify-center">
+        <div class="inline-flex items-center mb-0 rounded-full px-4 py-1 bg-yellow-500/20 text-sm font-semibold text-yellow-300">
+          Error 404 • Page not found
+        </div>
+      </div>
+      <h1 class="text-[72px] xl:text-[96px] text-white text-center mb-0 leading-0 tracking-tight">
+        Oops!
+      </h1>
+      <p class="text-center text-base text-slate-400 font-medium mb-9">
+        Maybe bigfoot has broken this page. Come back to the homepage.
+      </p>
+      <a href="/" class="inline-flex items-center justify-center rounded-md h-9 px-4 text-sm font-semibold bg-yellow-500 hover:bg-yellow-600 text-black">
+        <i class="fas fa-arrow-left mr-3" aria-hidden="true"></i> Go back to homepage
+      </a>
+    </div>
+  </div>
+</div>
