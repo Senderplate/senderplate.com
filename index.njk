@@ -688,6 +688,60 @@ mjmlSample: |
           
           <div>
             <div @click="open = !open" class="cursor-pointer">
+              Do you provide multi-user licenses for teams?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                Please contact our team via <a href="mailto:team@senderplate.com" class="font-semibold text-yellow-500">team@senderplate.com</a> and one of our representatives will provide assistance in multi-user licenses for teams and businesses.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-yellow-500" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              Can I download and use starter pack for commercial business use?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                The starter pack is strictly for personal use only. Only the solo package is available for profesional commercial use.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-yellow-500" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
+              How many Figma design templates are included in the starter pack?
+            </div>
+            <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
+              <p class="font-normal text-slate-300">
+                The starter pack comes with Figma design templates for 5 HTML email templates.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start font-bold text-base text-white" x-data="{ open: false }">
+
+          <div class="w-6 h-6 flex flex-none mr-3 items-center justify-center">
+            <i class="fas text-yellow-500" :class="open ? 'fa-minus' : 'fa-plus'"></i> 
+          </div>
+          
+          <div>
+            <div @click="open = !open" class="cursor-pointer">
               How many Figma design templates are included in the starter pack?
             </div>
             <div class="mt-4 pb-4" x-cloak x-show="open" x-transition.opacity>
