@@ -95,7 +95,7 @@ document.addEventListener(
       y: 100,
       stagger: 0.05,
       opacity: 0,
-      duration: 1,
+      duration: .8,
     });
   },
   false
